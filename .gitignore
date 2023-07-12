@@ -10,3 +10,4 @@ premailer/gorunsettings.py
 .tox
 /htmlcov/
 .eggs
+.idea

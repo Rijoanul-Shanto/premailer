@@ -677,6 +677,7 @@ class Premailer(object):
                         (
                             cssutils.css.csscomment.CSSComment,
                             cssutils.css.cssunknownrule.CSSUnknownRule,
+                            cssutils.css.cssmediarule.CSSMediaRule,
                         ),
                     ):
                         continue
