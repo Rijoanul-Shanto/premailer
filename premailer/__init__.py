@@ -1,3 +1,3 @@
 from .premailer import Premailer, transform  # noqa
 
-__version__ = "3.10.0"
+__version__ = "3.12.0"
