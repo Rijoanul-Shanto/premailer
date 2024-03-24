@@ -669,7 +669,8 @@ class Premailer(object):
             if isinstance(item, tuple):
                 k, v = item
                 lines.append("%s {%s}" % (k, make_important(v)))
-            # media rule
+            elif isinstance(item, cssutils.css.cssmediarule.CSSMediaRule):
+                continue
             else:
                 for rule in item.cssRules:
                     if isinstance(
@@ -677,7 +678,6 @@ class Premailer(object):
                         (
                             cssutils.css.csscomment.CSSComment,
                             cssutils.css.cssunknownrule.CSSUnknownRule,
-                            cssutils.css.cssmediarule.CSSMediaRule,
                         ),
                     ):
                         continue
