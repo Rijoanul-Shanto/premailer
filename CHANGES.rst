@@ -4,6 +4,10 @@ premailer Changes
 Peter's note: Unfortunately, ``premailer`` didn't use to keep a change log. But it's
 never too late to start, so let's start here and now.
 
+3.12.0
+------
+* Bug fix: completely ignore media rules regarding null bytes and control characters.
+
 3.10.0
 ------
 
